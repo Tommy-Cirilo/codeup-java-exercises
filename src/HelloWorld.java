@@ -24,8 +24,24 @@ public class HelloWorld {
         int three = (int) o;
 
 
+        //old way
+        /*int x = 4;
+        x = x + 5;*/
 
 
+
+        //old way
+        /*int x = 3;
+        int y = 4;
+        y = y * x;*/
+
+
+
+        /*
+        * int x = 10;
+int y = 2;
+x = x / y;
+y = y - x;*/
 
     }
 }
