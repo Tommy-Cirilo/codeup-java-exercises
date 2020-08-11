@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
         int i = 5;
@@ -13,10 +14,21 @@ public class ControlFlowExercises {
         } while (i1 <= 100);
         i1 = i1 + 2;
 
+// Create a do-while loop that starts at 2, and displays the number squared on each
+// line while the number is less than 1,000,000. Output should equal:
 
+//        int i2 = 2;
+//        do {
+//            System.out.println(i2);
+//            i2 += i2 * i2;
+//        } while (i2 < 1000000);
+//        i2 = i2 * i2;
 
-
-
+//        System.out.println("Squared up to a million");
+//        i = 2;
+//        do {
+//            System.out.println(i);
+//        }
 
 
     }
