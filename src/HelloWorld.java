@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class HelloWorld {
     public static void main(String[] args) {
-        int myFavoriteNumber = 27;
+ /*       int myFavoriteNumber = 27;
         System.out.println(myFavoriteNumber);
         System.out.println("Hello, World");
 
@@ -11,9 +11,9 @@ public class HelloWorld {
         float myNumber = 314;
         System.out.println(myNumber);
 
-       /* int x = 5;
+       *//* int x = 5;
         System.out.println(x++);
-        System.out.println(x);*/
+        System.out.println(x);*//*
 
         int x = 5;
         System.out.println(++x);
@@ -22,7 +22,7 @@ public class HelloWorld {
 
         String theNumberThree = "three";
         Object o = theNumberThree;
-        int three = (int) o;
+        int three = (int) o;*/
 
 
         //old way
@@ -43,6 +43,14 @@ public class HelloWorld {
 int y = 2;
 x = x / y;
 y = y - x;*/
+//        int x = 5;
+//        System.out.println(x > 2 ? x < 4 ? 10 : 8 : 7);
+
+//        int x = 5 * 4 % 3;
+//        System.out.println(x);
+//        String name = "7";
+//
+//        System.out.println(name);
 
     }
 }
