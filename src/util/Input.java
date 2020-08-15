@@ -26,14 +26,97 @@ Create another class named InputTest that has a static main method that uses all
 
 public class Input {
 
-    private Scanner scanner = new Scanner(System.in);
+    //making a final private scanner
+    final private Scanner scanner;
 
-    public static void main(String[] args) {
-
-
-    }
-    public String GetString() {
-
+    public Input() {
+        this.scanner = new Scanner(System.in);
     }
 
+    public void clear() {
+        this.scanner.nextLine();
+    }
+
+    //this method gets the input string
+    public String getString() {
+        System.out.println("Input string...");
+        return this.scanner.nextLine();
+    }
+
+    //this switch statement helps the boolean yes or no continue or not based off of user input
+    public boolean yesNo() {
+        System.out.println("Yes or No?");
+        String input = getString();
+        input = input.toLowerCase();
+        switch (input) {
+            case ("no"):
+                return false;
+            case ("n"):
+                return false;
+            case ("nope"):
+                return false;
+            case ("denied"):
+                return false;
+            case ("uh uh"):
+                return false;
+            case ("yes"):
+                return true;
+            case ("y"):
+                return true;
+            case ("yep"):
+                return true;
+            case ("sure"):
+                return true;
+            case ("si"):
+                return true;
+            case ("uh huh"):
+                return true;
+            case ("approved"):
+                return true;
+            case ("maybe"):
+                System.out.println("Ain't you cute?");
+                return yesNo();
+            default:
+                return yesNo();
+        }
+    }
+
+    //this method gets an int range for the user input
+    public int getInt(int min, int max) {
+        int input;
+        do {
+            System.out.println("Enter a number between " + min + " and " + max + ".");
+            input = this.scanner.nextInt();
+            if (input < min || input > max) {
+                System.out.println("Input invalid");
+            }
+        } while (input < min || input > max);
+        System.out.println("Input acceptable");
+        return input;
+    }
+
+    //this method gets the user input int
+    public int getInt() {
+        System.out.println("Input number...");
+        return this.scanner.nextInt();
+    }
+
+    //this method gets the input double
+    public double getDouble(double min, double max) {
+        double input;
+        do {
+            System.out.println("Enter a number between " + min + " and " + max + ".");
+            input = this.scanner.nextDouble();
+            if (input < min || input > max) {
+                System.out.println("Input invalid");
+            }
+        } while (input < min || input > max);
+        System.out.println("Input acceptable");
+        return input;
+    }
+    //this method retrieves the input double int
+    public double getDouble() {
+        System.out.println("Input number...");
+        return this.scanner.nextDouble();
+    }
 }
