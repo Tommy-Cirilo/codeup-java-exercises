@@ -114,6 +114,7 @@ public class Input {
         System.out.println("Input acceptable");
         return input;
     }
+
     //this method retrieves the input double int
     public double getDouble() {
         System.out.println("Input number...");
