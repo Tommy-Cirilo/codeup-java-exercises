@@ -15,11 +15,11 @@ public class Rectangle {
         this.length = length;
         this.width = width;
     }
-
+    //This generates the area for the given length and width property
     public int getArea() {
         return length * width;
     }
-
+    //This generates the perimeter for the given length and width property
     public int getPerimeter() {
         return 2 * length + 2 * width;
     }
