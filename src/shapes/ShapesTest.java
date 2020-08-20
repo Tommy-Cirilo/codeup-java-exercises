@@ -12,7 +12,7 @@ public class ShapesTest {
     protected int box1;
     protected int box2;
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         //creates a variable with Rectangle as type, and assigns it a new instance with parameters
         Rectangle box1 = new Rectangle(4,5);
         System.out.println("The perimeter of the rectangle is: " + box1.getPerimeter());
@@ -21,5 +21,5 @@ public class ShapesTest {
         Square box2 = new Square(4);
         System.out.println("The perimeter of the square is: " + box2.getPerimeter());
         System.out.println("The area of the square is: " + box2.getArea());
-    }
+    }*/
 }
