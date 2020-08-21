@@ -12,9 +12,13 @@ public class Student {
     private Student name;
     private Student grades;
 
-
+    //get grades
     public Student getGrades() {
         return grades;
+    }
+    // returns the student's name
+    public Student getName() {
+        return name;
     }
     //set Student's name
     public void setName(Student name) {
@@ -26,10 +30,6 @@ public class Student {
     }
 
 
-    // returns the student's name
-    public String getName(Student) {
-        return String name;
-    }
     // adds the given grade to the grades property
     public void addGrade(int grade);
     // returns the average of the students grades
