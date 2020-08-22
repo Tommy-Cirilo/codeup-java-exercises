@@ -13,8 +13,9 @@ method correctly returns the average of the student's grades.*/
 public class Student {
     private Student name;
     private Student grades;
-    static ArrayList<String> studentNames = new ArrayList<>();
-    static ArrayList<Double> studentGrades = new ArrayList<>();
+//    int avg = studentGrades / studentGrades.size();
+    static private ArrayList<String> studentNames = new ArrayList<>();
+    static private ArrayList<Integer> studentGrades = new ArrayList<>();
 
     //set Student's name
     public void setName(Student name) {
@@ -38,8 +39,17 @@ public class Student {
 
 
     // adds the given grade to the grades property
-    public void addGrade(int grade);
+    public void addGrade(int grade) {
+        studentGrades.add(grade);
+    }
 
     // returns the average of the students grades
-    public double getGradeAverage();
+    public int getGradeAverage(int studentGrades){
+
+        return studentGrades.average();
+    }
+
+    public static void main (String[]Args) {
+
+    }
 }
