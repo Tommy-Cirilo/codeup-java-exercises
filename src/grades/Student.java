@@ -52,11 +52,11 @@ public class Student {
         //initialized a total and average for loop to add all student grades together
         int total = 0;
 
-        for(int i=0; i<studentGrades.length; i++){
+       /* for(int i=0; i<studentGrades.length; i++){
 //            total = total + studentGrades[i];
             total = Integer.sum(studentGrades[i]);
         }
-        double average = total / studentGrades.length;
+        double average = total / studentGrades.length; */
         return total;
     }
 
