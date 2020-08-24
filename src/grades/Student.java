@@ -1,4 +1,5 @@
 package grades;
+
 import java.util.ArrayList;
 /*should have private properties for the student's name, and grades. The grades
 property should be an ArrayList of integers. The student class should have a
@@ -13,7 +14,10 @@ method correctly returns the average of the student's grades.*/
 public class Student {
     private Student name;
     private Student grades;
-//    int avg = studentGrades / studentGrades.size();
+
+
+
+    //    int avg = studentGrades / studentGrades.size();
     static private ArrayList<String> studentNames = new ArrayList<>();
     static private ArrayList<Integer> studentGrades = new ArrayList<>();
 
@@ -44,12 +48,21 @@ public class Student {
     }
 
     // returns the average of the students grades
-    public int getGradeAverage(int studentGrades){
+    public int getGradeAverage(int studentGrades) {
+        //initialized a total and average for loop to add all student grades together
+        int total = 0;
 
-        return studentGrades.average();
+        for(int i=0; i<studentGrades.length; i++){
+//            total = total + studentGrades[i];
+            total = Integer.sum(studentGrades[i]);
+        }
+        double average = total / studentGrades.length;
+        return total;
     }
 
-    public static void main (String[]Args) {
+
+
+    public static void main(String[] Args) {
 
     }
 }
